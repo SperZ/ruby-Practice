@@ -8,7 +8,7 @@ puts(x)
 MY_NUM = 8
 
 # adding values
-y = My_NUM + x
+y = MY_NUM + x
 puts y
 
 # declaring strings
@@ -40,7 +40,7 @@ else
     puts "nope"
 end
 
-case y
+case x
 when 1,2,3
     puts "1-3"
 when 4,5,6
