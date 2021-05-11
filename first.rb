@@ -8,7 +8,7 @@ puts(x)
 MY_NUM = 8
 
 # adding values
-y = MyNum + x
+y = My_NUM + x
 puts y
 
 # declaring strings
@@ -24,3 +24,29 @@ name_input = gets
 hello_name = "Hello ${name_input}"
 print hello_name
 =end
+
+
+# IF STATEMENTS
+if x > MY_NUM
+  puts true
+end
+
+# if, elsif, else
+if y > 20
+    puts "yes"
+elsif y > 10
+    puts "maybe"
+else
+    puts "nope"
+end
+
+case y
+when 1,2,3
+    puts "1-3"
+when 4,5,6
+    puts "4-6"
+when 7,8,9
+    puts "7-9"
+else
+    puts "10 or greater"
+end
