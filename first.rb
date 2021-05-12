@@ -88,12 +88,46 @@ else
     puts "is not true = false"
 end
 
-# while loop -----
+# while loop ----- runs while condition is true and stops once condition is false
+
+iterator = 0;
+while is_true
+    if(iterator > 5)
+        is_true = false
+        puts "iterator = #{iterator} isTrue =  #{is_true}"
+    end
+    iterator += 1
+end
+
+a = 0
+# until loop, the opposite of a while loop as it runs while the condition is false and stops once it is true
+until a > 10
+    puts "a = #{a}"
+    a +=2
+end
+
+#For Loop
+
+for i in (1..10)
+    puts "i = #{i}"
+end
+
+for x in ("a"..."d")
+    puts "x is at #{x}"
+end
+
+for iter in (1..10)
+    break if iter > 3 # break will stop the loop from running if condition is met
+    puts iter
+end
+
+for iter_two in (1..10)
+    next if i%2 == 0 # next will skip the the current iteration if condition is met
+    puts iter_two
+end
 
 
-
-
-# string manipulation ---------------------------------------------------------------------------------------------------------
+#string manipulation ---------------------------------------------------------------------------------------------------------
 str = "lace"
 
 str[0] = "m" # index changes the first letter in the string str from l to m
@@ -119,6 +153,5 @@ str_three = "PARTIES"
 
 puts str_three.downcase() # converts the string to all lowercase letters
 
-puts str_three[-1] # gets the last element of the string
+puts str_three[-1]; # gets the last element of the string
 
-# loops and control structures ---------------------------------------------------------
