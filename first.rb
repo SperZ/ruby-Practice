@@ -24,7 +24,7 @@ name_input = gets
 hello_name = "Hello ${name_input}"
 print hello_name
 =end
-
+# Control structures and loops-----------------------------------------
 
 # IF STATEMENTS
 if x > MY_NUM
@@ -51,6 +51,46 @@ when 7,8,9
 else
     puts "10 or greater"
 end
+
+case_value = "Hello"
+
+case case_value
+when "Goodbye"
+    puts "Goodbye"
+when "Hello"
+    puts "Hello"
+end
+
+# boolean values and if logical comparators
+is_true = true
+is_false =false
+if(is_true || is_false)
+    puts "Or is true"
+end
+
+if(is_true && is_false)
+    puts "And is true"
+else
+    puts "And is false"
+end
+
+if(is_true != is_false)
+    puts "Not Equal"
+end
+
+if(!is_false)
+    puts "is not false = true"
+end
+
+if(!is_true)
+    puts "is not true = true"
+else
+    puts "is not true = false"
+end
+
+# while loop -----
+
+
 
 
 # string manipulation ---------------------------------------------------------------------------------------------------------
@@ -80,3 +120,5 @@ str_three = "PARTIES"
 puts str_three.downcase() # converts the string to all lowercase letters
 
 puts str_three[-1] # gets the last element of the string
+
+# loops and control structures ---------------------------------------------------------
