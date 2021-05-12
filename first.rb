@@ -155,3 +155,76 @@ puts str_three.downcase() # converts the string to all lowercase letters
 
 puts str_three[-1]; # gets the last element of the string
 
+# arrays in ruby
+
+arr = [1,2,3,4,5]
+
+arr.length # prints the number of elements in an array
+
+arr_1 = ["ruby", 1, true, "language", 2.7] # ruby arrays are dynamic and can contain elements of numerous types
+
+puts arr_1
+
+arr << 6 #adds element to the end of an array
+
+print arr # arr now is equal to arr =[1,2,3,4,5,6]
+
+arr.delete_at(0) # this deletes the the element of the array at index 0
+
+puts
+print arr
+
+arr_1.delete_at(-1) # deletes the last element in the arr, -2 would delete the second to last, and so on and so forth
+puts
+print arr_1
+
+for c in arr_1
+    puts"Value: #{c}"
+end
+
+arr11 = [2,4,6,8,10]
+
+arr22 = [5,6,7,8,9,10]
+
+print "array and result: #{arr11 & arr22}" # & finds common elements in the two arrays and in this section prints them
+
+puts
+print "array or operator result:  #{arr11 | arr22}" # | finds the unique elements in the array and in this prints removing duplication
+
+arr3 = [1, 2, 4, 5, 6]
+
+arr4 = [7,8,9,10]
+
+arr5 = arr3 + arr4  # will concatenate the two arrays together
+
+puts
+print "array concat result #{arr5}"
+
+arr6 = [5,7,9]
+
+arr7 = arr5 - arr6 # will remove the items in arr5 that are also in arr6
+
+puts
+print "array subtraction result = #{arr7}"
+
+arrayDuplicates = [1,1,2,2,3,3,4,4,5,5]
+
+puts 
+puts arrayDuplicates.length
+
+puts arrayDuplicates.size #size and lenght  return similar values
+ 
+print arrayDuplicates.max #returns the largest element of the array
+
+puts 
+print arrayDuplicates.min #returns the smallest element of the array
+
+puts
+puts arrayDuplicates.pop #removes the last element of an array
+
+print arrayDuplicates.shift
+
+arrayDuplicates.unshift(10) # adds elements to the beginning of an array
+
+puts
+print arrayDuplicates
